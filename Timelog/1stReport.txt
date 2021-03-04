@@ -1,0 +1,32 @@
+[When you submited the time log, please remove all sentences enclosed by square brackets]
+
+Report submited at 7:55 3/3/2021 
+
+Role 
+    Assignment Leader: Patrick Wolff
+    Programmer       : Alex Walker, potentially terry warrick
+    Tester           : Matthew Wells
+
+Progress 
+    No previous time logs have been reported
+    we plan to make a good bit of progress before next timelog
+Challenging Issues 
+    List major problems conquered by team members or to be solved by team members.
+
+Work to be done 
+    alex walker (potentially terry warrick)
+        writing the program and writing the report
+    matthew wells
+        creating the test file and writing the test report
+    Patrick wolff
+        writing the timelog reports, commanding the team to be able to finish on time.
+
+Meet deadline 
+    alex walker (potentially terry warrick)
+        Will the developer(s) be able to finish and submit the work before the next
+	deadline?  If no, please explain why?
+        at this point I believe so
+    Matthew Wells
+        Will the tester(s) be able to finish and submit the work before the next
+	deadline?  If no, please explain why?
+        at this point I believe so
