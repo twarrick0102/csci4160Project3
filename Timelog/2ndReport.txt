@@ -1,0 +1,34 @@
+Report submited at 2021-3-8 11:05 PM
+
+Role 
+    Assignment Leader: Patrick Wolff
+    Programmer       : Alex Walker, terry warrick
+    Tester           : Matthew Wells
+Progress 
+    Matthew Wells
+        None However He is very vocal in the discussion and I believe he understands what to do.
+    Alex Walker
+        None I have not heard much from alex 
+    Patrick Wolff
+        I have done nothing except these time cards and try to oragnize people. I have provided my tiger.ll file as I seem to have gotten the best grade on it         
+    terry warrick
+        None but very vocal and was stressed last week due to lots of test and projects
+
+Challenging Issues 
+    List major problems conquered by team members or to be solved by team members.
+
+Work to be done [This section is required for each report]
+    Patrick Wolff
+        next time log and presentation of the project
+    terry warrick
+        writing the program portion of the code. They have not begun but are starting now. probably will need 4+ hours
+    alex walker
+        responsible for working with terry warrick to help produce the code portion of this project. probably will need 4+ hours
+    Name of a team member
+        responsible for creating the test file. says he will need only 1 hour to do so
+
+Meet deadline [This section is required for each report]
+    terry warrick, alex walker
+        at this moment I have faith that they can do this project in time however it is a little difficult getting alex to communicate. I am trying to and I believe that they can get this done. However again the lack of communication is a little worrying
+    Matthew wells
+        I believe he knows what he is doing and will be able to finish in time. 
