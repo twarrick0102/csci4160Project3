@@ -1,28 +1,4 @@
 ﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(491,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (MainDriver.vcxproj).  This can lead to incorrect clean and rebuild behavior.
   Performing Custom Build Tools
-  tiger.yy:49.41-42: error: $$ of 'exp' has no declared type
-  tiger.yy:50.41-42: error: $$ of 'exp' has no declared type
-  tiger.yy:50.46-47: error: $1 of 'exp' has no declared type
-  tiger.yy:51.49-50: error: $$ of 'exp' has no declared type
-  tiger.yy:51.53-54: error: $1 of 'exp' has no declared type
-  tiger.yy:52.49-50: error: $$ of 'exp' has no declared type
-  tiger.yy:52.54-55: error: $1 of 'exp' has no declared type
-  tiger.yy:52.59-60: error: $3 of 'exp' has no declared type
-  tiger.yy:53.49-50: error: $$ of 'exp' has no declared type
-  tiger.yy:53.54-55: error: $1 of 'exp' has no declared type
-  tiger.yy:53.59-60: error: $3 of 'exp' has no declared type
-  tiger.yy:54.49-50: error: $$ of 'exp' has no declared type
-  tiger.yy:54.54-55: error: $1 of 'exp' has no declared type
-  tiger.yy:54.59-60: error: $3 of 'exp' has no declared type
-  tiger.yy:55.49-50: error: $$ of 'exp' has no declared type
-  tiger.yy:55.54-55: error: $1 of 'exp' has no declared type
-  tiger.yy:55.59-60: error: $3 of 'exp' has no declared type
-  tiger.yy:56.57-58: error: $$ of 'exp' has no declared type
-  tiger.yy:56.62-63: error: $2 of 'exp' has no declared type
-  tiger.yy:58.49-50: error: $$ of 'exp' has no declared type
-  tiger.yy:58.58-59: error: $1 of 'exp' has no declared type
-  tiger.yy:58.62-63: error: $3 of 'exp' has no declared type
-  tiger.yy:60.57-58: error: $$ of 'exp' has no declared type
-  tiger.yy:60.63-64: error: $2 of 'exp' has no declared type
-  tiger.yy:60.19-73: warning: token for %prec is not defined: UMINUS
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets(238,5): error MSB8066: Custom build for 'tiger.yy' exited with code 1.
+  tiger.yy: conflicts: 29 shift/reduce
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets(238,5): warning MSB8065: Custom build for item "tiger.yy" succeeded, but specified output "c:\users\terry\desktop\csci4160project3\bisonproject\maindriver\tiger.tab.cc tiger.tab.hh" has not been created. This may cause incremental build to work incorrectly.
