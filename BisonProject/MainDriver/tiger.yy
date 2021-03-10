@@ -31,9 +31,12 @@ void yyerror(char *s);	//called by the parser whenever an eror occurs
   ARRAY IF THEN ELSE WHILE FOR TO DO LET IN END OF 
   BREAK NIL
   FUNCTION VAR TYPE 
-
+  NUMBER EQ
 /* add your own predence level of operators here */ 
-
+%left PLUS MINUS
+%left TIMES DIVIDE
+%left UMINUS
+%right POWER
 %start program
 
 %%
@@ -43,10 +46,61 @@ void yyerror(char *s);	//called by the parser whenever an eror occurs
  *  to replace the two dummy productions below with an actual grammar. 
  */
 
-program	:	exp
+program	:	/* empty */
+		|	program line	
+		;
 
-exp		:	ID
+line	:	NEWLINE
+		|	exp NEWLINE	
+		|	error NEWLINE
+		;
 
+exp		:	STRING	
+		|	NUMBER
+		|	NIL
+		|	lvalue
+		|	exp PLUS exp	
+		|	exp MINUS exp	
+		|	exp TIMES exp	
+		|	exp DIVIDE exp	
+		|	LPAREN exp RPAREN	
+		/* exponentiation */
+		|	exp POWER exp	
+		/* Unary minus */
+		|	MINUS exp %prec UMINUS
+		|	ID LPAREN expr-list RPAREN
+		|	ID LPAREN NIL RPAREN
+		|	LPAREN expr-seq RPAREN
+		|	LPAREN NIL RPAREN
+		|	type-id LBRACK field-list RBRACK
+		|	type-id LBRACK NIL RBRACK
+		|	type-id LBRACE exp RBRACE OF exp
+		|	IF exp THEN exp
+		|	IF exp THEN exp ELSE exp
+		|	WHILE exp DO exp
+		|	FOR ID ASSIGN exp TO exp DO exp
+		|	BREAK
+		|	LET declaration-list IN expr-seq END
+		|	LET declaration-list IN NIL END
+		;
+
+expr-seq:	exp
+		|	expr-seq COLON exp
+		;
+
+expr-list:	exp
+		 |	expr-list COMMA exp
+		 ;
+
+field-list:	ID EQ exp
+		  |	field-list COMMA ID EQ exp
+		  ;
+
+lvalue:		ID
+			lvalue DOT ID
+			lvalue LBRACE exp RBRACE
+
+ 
 
 %%
 extern yyFlexLexer	lexer;
