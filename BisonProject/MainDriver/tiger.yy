@@ -30,11 +30,14 @@ void yyerror(char *s);	//called by the parser whenever an eror occurs
   LBRACE RBRACE DOT 
   ARRAY IF THEN ELSE WHILE FOR TO DO LET IN END OF 
   BREAK NIL
-  FUNCTION VAR TYPE 
-  NUMBER EQ
+  FUNCTION VAR TYPE NEWLINE
+  NUMBER 
 /* add your own predence level of operators here */ 
 %left PLUS MINUS
 %left TIMES DIVIDE
+%left EQ NEQ GT LT GE LE
+%left AND OR
+%left ASSIGN
 %left UMINUS
 %right POWER
 %start program
@@ -69,19 +72,19 @@ exp		:	STRING
 		/* Unary minus */
 		|	MINUS exp %prec UMINUS
 		|	ID LPAREN expr-list RPAREN
-		|	ID LPAREN NIL RPAREN
+		|	ID LPAREN RPAREN
 		|	LPAREN expr-seq RPAREN
-		|	LPAREN NIL RPAREN
-		|	type-id LBRACK field-list RBRACK
-		|	type-id LBRACK NIL RBRACK
-		|	type-id LBRACE exp RBRACE OF exp
+		|	LPAREN RPAREN
+		|	ID LBRACK field-list RBRACK
+		|	ID LBRACK RBRACK
+		|	ID LBRACE exp RBRACE OF exp
 		|	IF exp THEN exp
 		|	IF exp THEN exp ELSE exp
 		|	WHILE exp DO exp
 		|	FOR ID ASSIGN exp TO exp DO exp
 		|	BREAK
 		|	LET declaration-list IN expr-seq END
-		|	LET declaration-list IN NIL END
+		|	LET declaration-list IN END
 		;
 
 expr-seq:	exp
@@ -97,8 +100,44 @@ field-list:	ID EQ exp
 		  ;
 
 lvalue:		ID
-			lvalue DOT ID
-			lvalue LBRACE exp RBRACE
+	   |	lvalue DOT ID
+	   |	lvalue LBRACE exp RBRACE
+	   ;
+
+declaration-list:	declaration
+				|	declaration-list declaration
+				;
+
+declaration:	type-declaration
+			|	variable-declaration
+			|	function-declaration
+			;
+
+type-declaration:	type ID EQ type
+				;
+
+type:	ID
+	|	LBRACK type-fields RBRACK
+	|	LBRACK RBRACK
+	|	ARRAY OF ID
+	;
+
+type-fields:	type-field
+			|	type-field COMMA type-field
+			;
+type-field:		ID COLON ID
+		   ;
+
+variable-declaration:	VAR ID ASSIGN exp
+					|	VAR ID COLON ID ASSIGN exp
+					;
+
+function-declaration:	FUNCTION ID LPAREN type-fields RPAREN EQ exp
+					|	FUNCTION ID LPAREN RPAREN EQ exp
+					|	FUNCTION ID LPAREN type-fields RPAREN COLON ID EQ exp
+					|	FUNCTION ID LPAREN RPAREN COLON ID EQ exp
+					;
+
 
  
 

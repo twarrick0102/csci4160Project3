@@ -1,10 +1,8 @@
+/* A Bison parser, made by GNU Bison 2.7.  */
 
-/* A Bison parser, made by GNU Bison 2.4.1.  */
-
-/* Skeleton interface for Bison's Yacc-like parsers in C
+/* Bison interface for Yacc-like parsers in C
    
-      Copyright (C) 1984, 1989, 1990, 2000, 2001, 2002, 2003, 2004, 2005, 2006
-   Free Software Foundation, Inc.
+      Copyright (C) 1984, 1989-1990, 2000-2012 Free Software Foundation, Inc.
    
    This program is free software: you can redistribute it and/or modify
    it under the terms of the GNU General Public License as published by
@@ -32,6 +30,15 @@
    This special exception was added by the Free Software Foundation in
    version 2.2 of Bison.  */
 
+#ifndef YY_YY_TIGER_TAB_HH_INCLUDED
+# define YY_YY_TIGER_TAB_HH_INCLUDED
+/* Enabling traces.  */
+#ifndef YYDEBUG
+# define YYDEBUG 1
+#endif
+#if YYDEBUG
+extern int yydebug;
+#endif
 
 /* Tokens.  */
 #ifndef YYTOKENTYPE
@@ -69,47 +76,74 @@
      FUNCTION = 285,
      VAR = 286,
      TYPE = 287,
-     ASSIGN = 288,
-     OR = 289,
-     AND = 290,
-     GE = 291,
-     GT = 292,
-     LE = 293,
-     LT = 294,
-     NEQ = 295,
-     EQ = 296,
-     MINUS = 297,
-     PLUS = 298,
-     DIVIDE = 299,
-     TIMES = 300,
-     UMINUS = 301
+     NEWLINE = 288,
+     NUMBER = 289,
+     MINUS = 290,
+     PLUS = 291,
+     DIVIDE = 292,
+     TIMES = 293,
+     LE = 294,
+     GE = 295,
+     LT = 296,
+     GT = 297,
+     NEQ = 298,
+     EQ = 299,
+     OR = 300,
+     AND = 301,
+     ASSIGN = 302,
+     UMINUS = 303,
+     POWER = 304
    };
 #endif
-
 
 
 #if ! defined YYSTYPE && ! defined YYSTYPE_IS_DECLARED
 typedef union YYSTYPE
 {
-
-/* Line 1676 of yacc.c  */
-#line 14 "tiger.yy"
+/* Line 2058 of yacc.c  */
+#line 17 "tiger.yy"
 
 	int		ival;	//integer value of INT token
-	string* sval;	//pointer to name of IDENTIFIER or value of STRING	
+	std::string* sval;	//pointer to name of IDENTIFIER or value of STRING	
 					//I have to use pointers since C++ does not support 
 					//string object as the union member
 
 
-
-/* Line 1676 of yacc.c  */
-#line 107 "tiger.tab.hh"
+/* Line 2058 of yacc.c  */
+#line 114 "tiger.tab.hh"
 } YYSTYPE;
 # define YYSTYPE_IS_TRIVIAL 1
 # define yystype YYSTYPE /* obsolescent; will be withdrawn */
 # define YYSTYPE_IS_DECLARED 1
 #endif
 
+#if ! defined YYLTYPE && ! defined YYLTYPE_IS_DECLARED
+typedef struct YYLTYPE
+{
+  int first_line;
+  int first_column;
+  int last_line;
+  int last_column;
+} YYLTYPE;
+# define yyltype YYLTYPE /* obsolescent; will be withdrawn */
+# define YYLTYPE_IS_DECLARED 1
+# define YYLTYPE_IS_TRIVIAL 1
+#endif
+
 extern YYSTYPE yylval;
+extern YYLTYPE yylloc;
+#ifdef YYPARSE_PARAM
+#if defined __STDC__ || defined __cplusplus
+int yyparse (void *YYPARSE_PARAM);
+#else
+int yyparse ();
+#endif
+#else /* ! YYPARSE_PARAM */
+#if defined __STDC__ || defined __cplusplus
+int yyparse (void);
+#else
+int yyparse ();
+#endif
+#endif /* ! YYPARSE_PARAM */
 
-
+#endif /* !YY_YY_TIGER_TAB_HH_INCLUDED  */
