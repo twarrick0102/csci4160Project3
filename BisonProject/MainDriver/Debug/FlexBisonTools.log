@@ -1,4 +1,8 @@
-﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(491,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (MainDriver.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(519,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (MainDriver.vcxproj).  This can lead to incorrect clean and rebuild behavior.
   Performing Custom Build Tools
-  tiger.yy: conflicts: 29 shift/reduce
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets(238,5): warning MSB8065: Custom build for item "tiger.yy" succeeded, but specified output "c:\users\terry\desktop\csci4160project3\bisonproject\maindriver\tiger.tab.cc tiger.tab.hh" has not been created. This may cause incremental build to work incorrectly.
+  tiger.yy:70.38-39: error: $3 of 'exp' has no declared type
+  tiger.yy:71.41-42: error: $$ of 'exp' has no declared type
+  tiger.yy:71.46-47: error: $1 of 'exp' has no declared type
+  tiger.yy:71.51-52: error: $3 of 'exp' has no declared type
+  tiger.yy:74.41-42: error: $$ of 'exp' has no declared type
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets(240,5): error MSB8066: Custom build for 'tiger.yy' exited with code 1.
