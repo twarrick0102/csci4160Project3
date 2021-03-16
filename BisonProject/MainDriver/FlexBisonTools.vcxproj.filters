@@ -22,6 +22,12 @@
     <None Include="tiger.output">
       <Filter>Resource Files</Filter>
     </None>
+    <None Include="..\..\..\..\Downloads\testcases\test1.tig">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="test4.tig">
+      <Filter>Resource Files</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="tiger.ll">

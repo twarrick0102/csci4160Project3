@@ -47,6 +47,7 @@
   <ItemDefinitionGroup>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <None Include="..\..\..\..\Downloads\testcases\test1.tig" />
     <None Include="example.tig" />
     <None Include="readme.txt" />
     <CustomBuild Include="tiger.ll">
@@ -59,6 +60,7 @@
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\win_flex_bison-latest\win_bison  -d %(Identity)</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">tiger.tab.cc tiger.tab.hh</Outputs>
     </CustomBuild>
+    <None Include="test4.tig" />
     <None Include="tiger.output" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -1,28 +1,26 @@
 ﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(519,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (FlexBisonTools.vcxproj).  This can lead to incorrect clean and rebuild behavior.
   lex.yy.cc
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\include\stdint.h(49,1): warning C4005: 'INT8_MIN': macro redefinition
-C:\Users\LoneW\OneDrive\Documents\GitHub\csci4160Project3\BisonProject\MainDriver\lex.yy.cc(62): message : see previous definition of 'INT8_MIN'
+C:\Users\Terry\Desktop\csci4160Project3\BisonProject\MainDriver\lex.yy.cc(62): message : see previous definition of 'INT8_MIN'
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\include\stdint.h(50,1): warning C4005: 'INT16_MIN': macro redefinition
-C:\Users\LoneW\OneDrive\Documents\GitHub\csci4160Project3\BisonProject\MainDriver\lex.yy.cc(65): message : see previous definition of 'INT16_MIN'
+C:\Users\Terry\Desktop\csci4160Project3\BisonProject\MainDriver\lex.yy.cc(65): message : see previous definition of 'INT16_MIN'
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\include\stdint.h(51,1): warning C4005: 'INT32_MIN': macro redefinition
-C:\Users\LoneW\OneDrive\Documents\GitHub\csci4160Project3\BisonProject\MainDriver\lex.yy.cc(68): message : see previous definition of 'INT32_MIN'
+C:\Users\Terry\Desktop\csci4160Project3\BisonProject\MainDriver\lex.yy.cc(68): message : see previous definition of 'INT32_MIN'
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\include\stdint.h(53,1): warning C4005: 'INT8_MAX': macro redefinition
-C:\Users\LoneW\OneDrive\Documents\GitHub\csci4160Project3\BisonProject\MainDriver\lex.yy.cc(71): message : see previous definition of 'INT8_MAX'
+C:\Users\Terry\Desktop\csci4160Project3\BisonProject\MainDriver\lex.yy.cc(71): message : see previous definition of 'INT8_MAX'
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\include\stdint.h(54,1): warning C4005: 'INT16_MAX': macro redefinition
-C:\Users\LoneW\OneDrive\Documents\GitHub\csci4160Project3\BisonProject\MainDriver\lex.yy.cc(74): message : see previous definition of 'INT16_MAX'
+C:\Users\Terry\Desktop\csci4160Project3\BisonProject\MainDriver\lex.yy.cc(74): message : see previous definition of 'INT16_MAX'
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\include\stdint.h(55,1): warning C4005: 'INT32_MAX': macro redefinition
-C:\Users\LoneW\OneDrive\Documents\GitHub\csci4160Project3\BisonProject\MainDriver\lex.yy.cc(77): message : see previous definition of 'INT32_MAX'
+C:\Users\Terry\Desktop\csci4160Project3\BisonProject\MainDriver\lex.yy.cc(77): message : see previous definition of 'INT32_MAX'
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\include\stdint.h(57,1): warning C4005: 'UINT8_MAX': macro redefinition
-C:\Users\LoneW\OneDrive\Documents\GitHub\csci4160Project3\BisonProject\MainDriver\lex.yy.cc(80): message : see previous definition of 'UINT8_MAX'
+C:\Users\Terry\Desktop\csci4160Project3\BisonProject\MainDriver\lex.yy.cc(80): message : see previous definition of 'UINT8_MAX'
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\include\stdint.h(58,1): warning C4005: 'UINT16_MAX': macro redefinition
-C:\Users\LoneW\OneDrive\Documents\GitHub\csci4160Project3\BisonProject\MainDriver\lex.yy.cc(83): message : see previous definition of 'UINT16_MAX'
+C:\Users\Terry\Desktop\csci4160Project3\BisonProject\MainDriver\lex.yy.cc(83): message : see previous definition of 'UINT16_MAX'
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\include\stdint.h(59,1): warning C4005: 'UINT32_MAX': macro redefinition
-C:\Users\LoneW\OneDrive\Documents\GitHub\csci4160Project3\BisonProject\MainDriver\lex.yy.cc(86): message : see previous definition of 'UINT32_MAX'
-C:\Users\LoneW\OneDrive\Documents\GitHub\csci4160Project3\BisonProject\MainDriver\lex.yy.cc(1352,21): warning C4244: 'return': conversion from 'std::streamsize' to 'int', possible loss of data
-  main.cpp
+C:\Users\Terry\Desktop\csci4160Project3\BisonProject\MainDriver\lex.yy.cc(86): message : see previous definition of 'UINT32_MAX'
+C:\Users\Terry\Desktop\csci4160Project3\BisonProject\MainDriver\lex.yy.cc(1352,21): warning C4244: 'return': conversion from 'std::streamsize' to 'int', possible loss of data
   tiger.tab.cc
-C:\Users\LoneW\OneDrive\Documents\GitHub\csci4160Project3\BisonProject\MainDriver\tiger.tab.cc(950,5): warning C4065: switch statement contains 'default' but no 'case' labels
-C:\Users\LoneW\OneDrive\Documents\GitHub\csci4160Project3\BisonProject\MainDriver\tiger.tab.cc(1351,5): warning C4065: switch statement contains 'default' but no 'case' labels
-C:\Users\LoneW\OneDrive\Documents\GitHub\csci4160Project3\BisonProject\MainDriver\tiger.tab.cc(1664,5): warning C4065: switch statement contains 'default' but no 'case' labels
-  Generating Code...
-  MainDriver.vcxproj -> C:\Users\LoneW\OneDrive\Documents\GitHub\csci4160Project3\BisonProject\Debug\MainDriver.exe
+C:\Users\Terry\Desktop\csci4160Project3\BisonProject\MainDriver\tiger.tab.cc(1191,5): warning C4065: switch statement contains 'default' but no 'case' labels
+C:\Users\Terry\Desktop\csci4160Project3\BisonProject\MainDriver\tiger.tab.cc(1592,5): warning C4065: switch statement contains 'default' but no 'case' labels
+C:\Users\Terry\Desktop\csci4160Project3\BisonProject\MainDriver\tiger.tab.cc(1905,5): warning C4065: switch statement contains 'default' but no 'case' labels
+  MainDriver.vcxproj -> C:\Users\Terry\Desktop\csci4160Project3\BisonProject\Debug\MainDriver.exe
